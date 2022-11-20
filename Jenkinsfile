@@ -14,7 +14,6 @@ pipeline {
     agent {
       label 'Java_Test'
     }
-  }
     stage ('BUILD') {
       steps {
     git branch: 'main', url: 'https://github.com/Vinay-RR/Test_Java.git'
@@ -24,3 +23,4 @@ pipeline {
   }
 }
      }
+}
