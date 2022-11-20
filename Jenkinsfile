@@ -11,16 +11,9 @@ pipeline {
     } 
     post {
   always {
-    agent {
-      label 'Java_Test'
-    }
-    stage ('BUILD') {
-      steps {
-    git branch: 'main', url: 'https://github.com/Vinay-RR/Test_Java.git'
+    echo "I will always execute this"
         sh 'sleep 5'
       }
     }
   }
-}
-     }
 }
