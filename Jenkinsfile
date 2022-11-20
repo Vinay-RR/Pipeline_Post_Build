@@ -12,10 +12,10 @@ pipeline {
     post {
   always {
     agent {
-      label '
+      label 'Java_Test'
     stage ('BUILD') {
       steps {
-    git branch: 'main', url: 'https://github.com/Vinay-RR/Test-java-project.git'
+    git branch: 'main', url: 'https://github.com/Vinay-RR/Test_Java.git'
         sh 'sleep 5'
       }
     }
@@ -23,3 +23,4 @@ pipeline {
 }
      }
   }
+}
